@@ -1,20 +1,10 @@
 // 1
 let names = ["Ali", "Ayten", "Mehemmed"];
 
-let name1 = "Aytac";
-names[names.length] = name1; 
-console.log("Adlar:", names);
-
-const namerem = "Ayten";
-const index = names.indexOf(namerem);
-
-if (index !== -1) {
-    names.splice(index, 1); 
-    console.log(namerem + " silindi", names); 
-} else {
-    console.log(namerem + " tapilmadi.");
-}
-
+names.push("Aytac");
+console.log(names);
+names.pop();
+console.log(names);
 //2
 let obj = [
     {
@@ -47,7 +37,7 @@ let obj = [
         surname: "Aliyev",
         age:19,
         driving: true
-    }
+  }
 ]
 
 //3
@@ -74,7 +64,6 @@ function drive(arr) {
         }
     });
 }
-
 console.log("Adı 'N' ile başlayanlar:" );
 stringN(obj);
 
